@@ -1,8 +1,0 @@
-# .htaccess para enrutar todas las solicitudes a index.php
-RewriteEngine On
-
-# Si no existe archivo o carpeta física, redirige a index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(.*)$ index.php?uri=$1 [QSA,L]
