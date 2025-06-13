@@ -1,7 +1,7 @@
 <?php
 
-$host = 'basedatos-app.cgqv6sks1vqp.us-east-1.rds.amazonaws.com';
-$name = 'ecommerce_db';
+$host = 'db-obligatorio.cfanplfpi7x9.us-east-1.rds.amazonaws.com';
+$name = 'ecommerce';
 $user = 'admin';
 $password = 'admin1234';
 
