@@ -1,7 +1,6 @@
 <?php
 
-//$host = 'db-obligatorio.cfanplfpi7x9.us-east-1.rds.amazonaws.com';
-$host = 'DB_HOST_PLACEHOLDER';
+$host = 'db-obligatorio.cfanplfpi7x9.us-east-1.rds.amazonaws.com';
 $name = 'ecommerce';
 $user = 'admin';
 $password = 'admin1234';
