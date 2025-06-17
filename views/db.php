@@ -1,5 +1,3 @@
-//Este archivo ahora depende de config.php, que a su vez lee del .env_entorno. se reemplaza
-//todo el contenido de db.php por este otro.
 <?php
 require_once(__DIR__ . '/../config.php');
 
