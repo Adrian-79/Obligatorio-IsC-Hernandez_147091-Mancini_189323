@@ -1,4 +1,3 @@
-//Este archivo lee las variables del .env_entorno y las define para que otros scripts las puedan usar.
 <?php
 $dotenv = parse_ini_file(__DIR__ . '/.env_entorno');
 define('DB_HOST', $dotenv['DB_HOST']);
