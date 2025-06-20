@@ -1,8 +1,11 @@
 <?php
-require_once(__DIR__ . '/../config/config.php');
+$host = getenv('DB_HOST');
+$name = getenv('DB_NAME');
+$user = getenv('DB_USER');
+$password = getenv('DB_PASS');
 
 try {
-    $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+    $pdo = new PDO("mysql:host=$host;dbname=$name", $user, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $exception) {
     echo "❌ Connection error: " . $exception->getMessage();
