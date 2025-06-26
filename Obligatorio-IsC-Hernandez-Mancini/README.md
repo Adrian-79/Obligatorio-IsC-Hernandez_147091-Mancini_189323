@@ -5,7 +5,21 @@
 ![Obli2025](https://github.com/user-attachments/assets/98857d37-3d65-4f72-a9cc-6e100dff6c68)
 
 
-## Requirements
+## Requerimientos
+
+### Requisitos del entorno
+
+Herramientas obligatorias:
+Herramienta	Descripción	Requerido para
+Terraform ≥ 1.4.6	Herramienta IaC para desplegar la infraestructura en AWS.	Infraestructura
+AWS CLI	Línea de comandos para interactuar con AWS.	Configuración de credenciales y consultas
+Docker (opcional)	Para ejecutar herramientas como asciicast2gif sin instalar dependencias.	Generación de GIFs animados
+Git	Clonar el repositorio y versionar código.	Control de versiones
+Visual Studio Code (VSCode)	Editor utilizado en el proyecto con terminal integrada.	Desarrollo y ejecución de scripts
+WSL o Linux Shell	Entorno recomendado para ejecutar Bash, Terraform, etc.	Ejecución de scripts y despliegue
+Asciinema + asciicast2gif	Para grabar sesiones de terminal y exportarlas como GIF.	Documentación visual
+
+
 
 | Name | Version |
 |------|---------|
