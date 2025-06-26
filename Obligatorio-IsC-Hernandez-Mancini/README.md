@@ -4,6 +4,7 @@
 ## Modo de utilización del script deploy.sh, despliegue y acceso a la aplicación
 ![Obli2025](https://github.com/user-attachments/assets/98857d37-3d65-4f72-a9cc-6e100dff6c68)
 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Requerimientos
 
@@ -19,7 +20,32 @@
 | **WSL / Linux / Bash**        | Consola de comandos compatible con scripts Bash      | Ejecución de Terraform y scripts         |
 | **Asciinema + asciicast2gif** | Grabación y exportación de terminal como GIF animado | Documentación visual del proceso         |
 
+| Componente        | Servicios AWS involucrados                                      |
+| ----------------- | --------------------------------------------------------------- |
+| **Frontend**      | EC2, Launch Template, Auto Scaling Group, ALB, EFS              |
+| **Base de datos** | Amazon RDS Aurora (MySQL Multi-AZ), S3 para backups             |
+| **Red**           | VPC, subredes públicas/privadas, NAT Gateway, IGW, route tables |
+| **Seguridad**     | Security Groups, IAM Roles, claves SSH, AWS Systems Manager     |
+| **Monitoreo**     | Amazon CloudWatch (métricas, logs, alarmas)                     |
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Diagrama de arquitectura
+
+![Obligatorio 2025 ISC - AWS](https://github.com/user-attachments/assets/e46376b8-96ad-427e-a84b-f33c69ca43a1)
+
+
+### Accesos y configuración
+
+-Acceso SSH configurado mediante clave .pem con permisos chmod 400.
+
+-Dirección IP pública del ISP permitida en formato /32 (definida en terraform.tfvars).
+
+-Acceso alternativo por AWS Systems Manager (SSM).
+
+-Rol IAM (LabRole o equivalente) con permisos para EC2, RDS, ALB, EFS, S3, etc.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 
 | Name | Version |
