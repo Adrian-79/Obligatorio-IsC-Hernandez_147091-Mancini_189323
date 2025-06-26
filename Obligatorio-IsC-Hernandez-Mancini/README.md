@@ -1,10 +1,24 @@
-# Obligatorio - Ecommerce - Aplicación tienda de Productos YEM-YEM
+# 📂 Obligatorio - Arquitectura eCommerce en AWS - ISC 2025 - Aplicación tienda de Productos YEM-YEM
+----------------------------------------------------------------------------------------------------------------------------------------------
 
+## Descripción
+Este proyecto aborda la migración y automatización del frontend de una tienda online hacia Amazon Web Services (AWS). Se utilizó Terraform para desplegar infraestructura escalable y de alta disponibilidad, cumpliendo buenas prácticas de IaC y DevOps.
 
 ## Modo de utilización del script deploy.sh, despliegue y acceso a la aplicación
 ![Obli2025](https://github.com/user-attachments/assets/98857d37-3d65-4f72-a9cc-6e100dff6c68)
+Nota: ver instructivo Obligatorio_Hernandez_Mancini.pdf (pág. 22)
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+## Objetivo
+
+Diseñar y desplegar infraestructura en AWS que asegure:
+
+✅ Alta disponibilidad (Multi-AZ)
+✅ Escalabilidad automática (Auto Scaling Group)
+✅ Seguridad (Security Groups)
+✅ Monitoreo (CloudWatch)
+✅ Trazabilidad y automatización (Terraform)
 
 ## Requerimientos
 
@@ -25,7 +39,7 @@
 | **Frontend**      | EC2, Launch Template, Auto Scaling Group, ALB, EFS              |
 | **Base de datos** | Amazon RDS Aurora (MySQL Multi-AZ), S3 para backups             |
 | **Red**           | VPC, subredes públicas/privadas, NAT Gateway, IGW, route tables |
-| **Seguridad**     | Security Groups, IAM Roles, claves SSH, AWS Systems Manager     |
+| **Seguridad**     | Security Groups, claves SSH, AWS Systems Manager     |
 | **Monitoreo**     | Amazon CloudWatch (métricas, logs, alarmas)                     |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -35,6 +49,10 @@
 ![Obligatorio 2025 ISC - AWS](https://github.com/user-attachments/assets/e46376b8-96ad-427e-a84b-f33c69ca43a1)
 
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Accesos y configuración
 
 -Acceso SSH configurado mediante clave .pem con permisos chmod 400.
@@ -43,7 +61,14 @@
 
 -Acceso alternativo por AWS Systems Manager (SSM).
 
--Rol IAM (LabRole o equivalente) con permisos para EC2, RDS, ALB, EFS, S3, etc.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Infraestructura Terraform
+
+Obligatorio-IsC-Hernandez_147091-Mancini_189323/Obligatorio-IsC-Hernandez-Mancini/Obligatorio-IsC-Hernandez_147091-Mancini_189323/
+
+![image](https://github.com/user-attachments/assets/d29cb960-6e5d-4bd9-8cf0-56ca369566e0)
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -147,3 +172,23 @@ No modules.
 | <a name="output_rds_endpoint"></a> [rds\_endpoint](#output\_rds\_endpoint) | Endpoint de la base de datos RDS |
 | <a name="output_rds_port"></a> [rds\_port](#output\_rds\_port) | Puerto de conexión de la base de datos RDS |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | ID de la VPC creada |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Buenas prácticas implementadas
+
+-IaC con Terraform y versionado con Git
+
+-Modularización de infraestructura
+
+-Uso de variables parametrizadas
+
+-Logs centralizados (CloudWatch)
+
+-Acceso sin claves por SSM
+
+-Auto Scaling con Launch Templates
+
+-Multi-AZ para RDS, EC2, EFS y se hicieron pruebas con S3 para almacenamiento de logs.
+
