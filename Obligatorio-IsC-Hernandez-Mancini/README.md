@@ -6,8 +6,9 @@ Este proyecto aborda la migración y automatización del frontend de una tienda 
 
 ## Modo de utilización del script deploy.sh, despliegue y acceso a la aplicación
 
-Nota: ver instructivo Obligatorio_Hernandez_Mancini.pdf (pág. 22)
+![deploy](https://github.com/user-attachments/assets/cd83c69e-82f6-4df0-967d-12b36c49afd4)
 
+Nota: ver instructivo Obligatorio_Hernandez_Mancini.pdf (pág. 22)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## Objetivo
