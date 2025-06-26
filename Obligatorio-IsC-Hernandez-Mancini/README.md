@@ -7,17 +7,18 @@
 
 ## Requerimientos
 
-### Requisitos del entorno
+### Requisitos y dependencias
 
-Herramientas obligatorias:
-Herramienta	Descripción	Requerido para
-Terraform ≥ 1.4.6	Herramienta IaC para desplegar la infraestructura en AWS.	Infraestructura
-AWS CLI	Línea de comandos para interactuar con AWS.	Configuración de credenciales y consultas
-Docker (opcional)	Para ejecutar herramientas como asciicast2gif sin instalar dependencias.	Generación de GIFs animados
-Git	Clonar el repositorio y versionar código.	Control de versiones
-Visual Studio Code (VSCode)	Editor utilizado en el proyecto con terminal integrada.	Desarrollo y ejecución de scripts
-WSL o Linux Shell	Entorno recomendado para ejecutar Bash, Terraform, etc.	Ejecución de scripts y despliegue
-Asciinema + asciicast2gif	Para grabar sesiones de terminal y exportarlas como GIF.	Documentación visual
+| Herramienta                   | Descripción                                          | Uso principal                            |
+| ----------------------------- | ---------------------------------------------------- | ---------------------------------------- |
+| **Terraform ≥ 1.4.6**         | Infraestructura como código (IaC)                    | Despliegue de la infraestructura en AWS  |
+| **AWS CLI**                   | Línea de comandos para interactuar con AWS           | Configuración de credenciales y comandos |
+| **Git**                       | Control de versiones y clonación del repositorio     | Gestión del código fuente                |
+| **Docker** *(opcional)*       | Contenedor para herramientas como `asciicast2gif`    | Exportar sesiones como GIF animados      |
+| **Visual Studio Code**        | Entorno de desarrollo con terminal integrada         | Edición y ejecución de scripts           |
+| **WSL / Linux / Bash**        | Consola de comandos compatible con scripts Bash      | Ejecución de Terraform y scripts         |
+| **Asciinema + asciicast2gif** | Grabación y exportación de terminal como GIF animado | Documentación visual del proceso         |
+
 
 
 
